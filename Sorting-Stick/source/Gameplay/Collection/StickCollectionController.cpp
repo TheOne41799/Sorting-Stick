@@ -165,7 +165,7 @@ namespace Gameplay
 				sort_thread = std::thread(&StickCollectionController::processInsertionSort, this);
 				break;
 			case Gameplay::Collection::SortType::SELECTION_SORT:
-				sort_thread = std::thread(&StickCollectionController::processInsertionSort, this);
+				sort_thread = std::thread(&StickCollectionController::processSelectionSort, this);
 				break;
 			}
 		}
