@@ -65,6 +65,11 @@ namespace Gameplay
             void quickSort(int left, int right);
             void processQuickSort();
 
+            void countSort(int exponent);
+            void radixSort();
+            void processRadixSort();
+
+
             void setCompletedColor();
 
         public:
