@@ -169,6 +169,7 @@ namespace Gameplay
 				sort_thread = std::thread(&StickCollectionController::processSelectionSort, this);
 				break;
 			case Gameplay::Collection::SortType::MERGE_SORT:
+				time_complexity = "O(n Log n)";
 				sort_thread = std::thread(&StickCollectionController::processInPlaceMergeSort, this);
 				break;
 			}
